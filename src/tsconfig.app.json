@@ -1,12 +1,15 @@
+
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@pages/*": ["pages/*"],
-      "@contexts/*": ["contexts/*"],
-      "@styles/*": ["styles/*"],
-      "@components/*": ["components/*"]
+      "@/*": ["src/*"],
+      "@pages/*": ["src/pages/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@styles/*": ["src/styles/*"],
+      "@components/*": ["src/components/*"],
+      "@app/*": ["src/app/*"]
     }
   },
   "include": ["src"]

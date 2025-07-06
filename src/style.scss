@@ -1,0 +1,98 @@
+
+// Base styles for the application
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // Light theme variables
+  --widget-light: #ffffff;
+  --widget-dark: #1a1a1a;
+  --body-light: #f8f9fa;
+  --header-light: #212529;
+  --header-dark: #ffffff;
+  --text-light: #6c757d;
+  --text-dark: #ffffff;
+  --border-light: #dee2e6;
+  --border-dark: #495057;
+  --accent: #007bff;
+  --red: #dc3545;
+  --transition: 0.3s ease;
+  --element-height: 40px;
+  --switch: #ced4da;
+  --menu: #007bff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-light);
+  color: var(--text-light);
+}
+
+// Utility classes
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.g-8 {
+  gap: 8px;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.card {
+  background: var(--widget-light);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bordered {
+  border: 1px solid var(--border-light);
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-light);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
